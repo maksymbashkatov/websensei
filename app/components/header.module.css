@@ -1,0 +1,142 @@
+.headerTop {
+  background-color: #262626;
+}
+
+.headerTopContainer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-size: 60px;
+  font-weight: 700;
+
+  .p1 {
+    color: #681C23;
+    grid-row: span 2;
+    width: 148.5px;
+  }
+
+  .p2 {
+    color: #9B111E;
+    font-size: 32.4px;
+    margin-top: 1px;
+  }
+
+  .p3 {
+    font-size: 28px;
+    margin-top: -2px;
+  }
+}
+
+.logo p {
+  text-transform: uppercase;
+  line-height: 0.74;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 72px;
+  justify-self: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.menuItem {
+  padding: 10px 0;
+  position: relative;
+}
+
+.menuItem::before {
+  content: '';
+  position: absolute;
+  left: 50.3%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #9B111E;
+  transition: 0.3s;
+}
+
+.menuItem:hover::before {
+  width: 100%;
+}
+
+.socials {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, auto);
+  width: fit-content;
+}
+
+.socials a {
+  line-height: 0;
+}
+
+.headerMainContainer {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-items: start;
+  row-gap: 20px;
+  background-image: url(/sensei.jpg);
+  background-repeat: no-repeat;
+  background-position: right 18px top 0;
+  height: 600px;
+}
+
+.headerMain {
+  background-color: #333333;
+}
+
+.mainTitle {
+  max-width: 930px;
+  align-self: end;
+}
+
+.mainTitle h1 span {
+  display: block;
+  text-transform: uppercase;
+  line-height: 0.74;
+}
+
+.s1 {
+  font-size: 74px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-left: -5px;
+}
+
+.s2 {
+  font-size: 41px;
+  font-weight: 500;
+  margin-left: -2px;
+}
+
+.mainTitle h2 {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+  background-color: #9B111E;
+  padding: 15px 30px;
+  align-self: start;
+  border: 3px solid #FFFFFF;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #BF2233;
+}
