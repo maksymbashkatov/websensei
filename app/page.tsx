@@ -1,3 +1,4 @@
+import AboutUs from "./components/about-us";
 import Header from "./components/header";
 
 export default function Page() {
@@ -5,6 +6,7 @@ export default function Page() {
     <>
       <Header/>
       <main>
+        <AboutUs/>
       </main>
     </>
   );

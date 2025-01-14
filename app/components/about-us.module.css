@@ -1,0 +1,63 @@
+.aboutUsContainer {
+  display: grid;
+  grid-template-areas: 
+    'header list'
+    'text list';
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 20px;
+}
+
+.aboutUsContainer h2 {
+  grid-area: header;
+  text-transform: uppercase;
+  color: #262626;
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 0.74;
+  width: fit-content;
+  margin-left: -3px;
+}
+
+.content {
+  grid-area: text;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0 20px 20px;
+  border-left: 6px solid #9B111E;
+  max-width: 714px;
+}
+
+.benefits {
+  grid-area: list;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  height: fit-content;
+  padding-top: 20px;
+  justify-self: end;
+  border-top: 6px solid #9B111E;
+}
+
+.benefits li {
+  padding-left: 18px;
+  height: fit-content;
+  position: relative;
+}
+
+.benefits li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #9B111E;
+  border-radius: 50%;
+}
