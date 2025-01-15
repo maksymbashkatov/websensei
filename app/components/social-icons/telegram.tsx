@@ -1,6 +1,6 @@
+import styles from './telegram.module.css';
+
 export default function Telegram(
-  { telegramIconStyle }:
-  { telegramIconStyle: string }
 ) {
   return (
     <svg
@@ -8,7 +8,7 @@ export default function Telegram(
       width='32'
       height='32'
       fill='none'
-      className={telegramIconStyle}
+      className={styles.svg}
     >
     <circle cx='120' cy='120' r='120' fill='#FFFFFF' />
     <path

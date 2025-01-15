@@ -1,0 +1,11 @@
+.svg path {
+  transition: 0.3s;
+}
+
+.svg:hover .p1 {
+  fill: #0077FF;
+}
+
+.svg:hover .p2 {
+  fill: #FFFFFF;
+}

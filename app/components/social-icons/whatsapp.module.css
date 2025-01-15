@@ -1,0 +1,11 @@
+.svg circle {
+  transition: 0.3s;
+}
+
+.svg path {
+  transition: 0.3s;
+}
+
+.svg:hover path {
+  fill: #25D366;
+}

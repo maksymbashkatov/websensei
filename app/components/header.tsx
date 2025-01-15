@@ -16,28 +16,22 @@ const socials = [
   {
     id: 1,
     link: 'Telegram',
-    icon: <Telegram telegramIconStyle={styles.telegramIcon}></Telegram>,
+    icon: <Telegram/>
   },
   {
     id: 2,
     link: 'WhatsApp',
-    icon: <WhatsApp whatsappIconStyle={styles.whatsappIcon}></WhatsApp>,
+    icon: <WhatsApp/>
   },
   {
     id: 3,
     link: 'ВКонтакте',
-    icon: <VKontakte
-            vkontakteIconStyle={styles.vkontakteIcon}
-            vkontakteIconBackStyle={styles.vkontakteIconBack}
-          />,
+    icon: <VKontakte/>
   },
   {
     id: 4,
     link: 'Facebook',
-    icon: <Facebook
-            facebookIconStyle={styles.facebookIcon}
-            facebookIconBackStyle={styles.facebookIconBack}
-          />,
+    icon: <Facebook/>,
   }
 ];
 
