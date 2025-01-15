@@ -1,5 +1,13 @@
 @font-face {
   font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Light.woff2') format('woff2'),
+       url('/fonts/Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
   src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
        url('/fonts/Montserrat-Regular.woff') format('woff');
   font-weight: 400;
@@ -66,5 +74,10 @@ a:hover, .a:focus {
 }
 
 .section {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer {
+  background-color: #000000;
 }

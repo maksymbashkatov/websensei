@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import Footer from './components/footer';
 
 export const metadata: Metadata = {
   title: 'WebSensei APP',
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang='ru'>
       <body>
         {children}
+        <Footer/>
       </body>
     </html>
   );
