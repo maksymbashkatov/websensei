@@ -1,39 +1,6 @@
 import Link from 'next/link';
 import styles from './header.module.css';
-import Telegram from './social-icons/telegram';
-import WhatsApp from './social-icons/whatsapp';
-import VKontakte from './social-icons/vkontakte';
-import Facebook from './social-icons/facebook';
-
-const menu = [
-  {id: 1, link: '', text: 'О нас'},
-  {id: 2, link: '', text: 'Услуги'},
-  {id: 3, link: '', text: 'Отзывы'},
-  {id: 4, link: '', text: 'Контакты'}
-]
-
-const socials = [
-  {
-    id: 1,
-    link: 'Telegram',
-    icon: <Telegram/>
-  },
-  {
-    id: 2,
-    link: 'WhatsApp',
-    icon: <WhatsApp/>
-  },
-  {
-    id: 3,
-    link: 'ВКонтакте',
-    icon: <VKontakte/>
-  },
-  {
-    id: 4,
-    link: 'Facebook',
-    icon: <Facebook/>,
-  }
-];
+import { menu, socials } from '../data';
 
 export default function Header() {
   return (
