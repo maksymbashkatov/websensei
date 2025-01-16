@@ -100,8 +100,8 @@
   align-self: end;
 }
 
-/* Для десктопа меньше 1440
-.mainTitle {
+/* Для десктопа меньше 1440 */
+/* .mainTitle {
   max-width: 950px;
   align-self: end;
   background: linear-gradient(to right, #333333, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));

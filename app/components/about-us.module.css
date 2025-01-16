@@ -3,8 +3,6 @@
   grid-template-areas: 
     'header list'
     'text list';
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
   row-gap: 20px;
 }
 
