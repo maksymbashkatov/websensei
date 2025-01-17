@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import styles from './header.module.css';
-import { menu, socials } from '../data';
+import { menu } from '../data';
+import Telegram from './social-icons/telegram';
+import WhatsApp from './social-icons/whatsapp';
+import VKontakte from './social-icons/vkontakte';
+import Facebook from './social-icons/facebook';
 
 export default function Header() {
   return (
@@ -21,13 +25,10 @@ export default function Header() {
             }
           </nav>
           <div className={styles.socials}>
-            {
-              socials.map((social) =>
-              <Link href={social.link} key={social.id}>
-                {social.icon}
-              </Link>
-              )
-            }
+            <Link href={''}><Telegram fill={'#262626'}/></Link>
+            <Link href={''}><WhatsApp/></Link>
+            <Link href={''}><VKontakte fill={'#262626'}/></Link>
+            <Link href={''}><Facebook fill={'#262626'}/></Link>
           </div>
         </div>
       </div>

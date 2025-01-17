@@ -1,0 +1,53 @@
+.service {
+  display: grid;
+  row-gap: 8px;
+  max-width: 435px;
+}
+
+.service > *:nth-child(1) {
+  color: #9B111E;
+  font-size: 40px;
+  font-weight: 400;
+  border-bottom: 4px solid #9B111E;
+  line-height: 0.7;
+}
+
+.service > *:nth-child(2) {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.service > *:nth-child(3) {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.button {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #9B111E;
+  border-top: 2.5px solid #FFF;
+  border-bottom: 2.5px solid #FFF;
+  padding: 15px 0;
+  transition: 0.5s;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  max-width: 435px;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #BF2233;
+}
+
+.button p {
+  width: 435px;
+  transition: 0.5s;
+}
+
+.button:hover p {
+  margin-left: -100%;
+}
