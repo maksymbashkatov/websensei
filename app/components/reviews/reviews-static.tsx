@@ -1,4 +1,4 @@
-import styles from './reviewsStatic.module.css';
+import styles from './reviews-static.module.css';
 
 const reviews = [
   {

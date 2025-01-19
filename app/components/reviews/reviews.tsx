@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from './reviews.module.css';
-import ReviewsStatic from './reviewsStatic';
+import ReviewsStatic from './reviews-static';
 
 export default function Reviews() {
   const [activeIndex, setActiveIndex] = useState(2);
