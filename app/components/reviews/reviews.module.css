@@ -1,0 +1,53 @@
+.reviews {
+  display: grid;
+  row-gap: 40px;
+  overflow: hidden;
+}
+
+.title {
+  color: #262626;
+  font-size: 41px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.74;
+}
+
+.reviewsContainer {
+  justify-self: center;
+  display: grid;
+  column-gap: 160px;
+  grid-template-columns: repeat(3, auto);
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.activeReview {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.inactiveReview {
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+
+.circlesContainer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  column-gap: 56px;
+}
+
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #FFF;
+  cursor: pointer;
+  border: 3px solid #9B111E;
+  transition: background-color 0.3s;
+}
+
+.activeCircle {
+  background-color: #9B111E;
+}

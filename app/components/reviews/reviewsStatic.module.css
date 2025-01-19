@@ -1,0 +1,30 @@
+.review {
+  display: grid;
+  align-content: center;
+  row-gap: 20px;
+  color: #262626;
+  background-color: #F2F2F2;
+  width: 886px;
+  border-left: 6px solid #9B111E;
+  padding: 40px;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.review > *:nth-child(1) {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+}
+
+.review > *:nth-child(2) {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.review > *:nth-child(3) {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+}
