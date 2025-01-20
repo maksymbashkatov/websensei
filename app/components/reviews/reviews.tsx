@@ -16,7 +16,7 @@ export default function Reviews() {
     return `translateX(calc(${(2 - activeIndex) * offset}px))`;
   };
   
-  return <section className={`${styles.reviews} section`}>
+  return <section id='reviews' className={`${styles.reviews} section`}>
   <h2 className={styles.title}>Что говорят о нас клиенты?</h2>
   <div className={styles.reviewsContainer} style={{ transform: calculateTransform() }}>
     <ReviewsStatic

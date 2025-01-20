@@ -1,7 +1,7 @@
 import styles from './about-us.module.css';
 
 export default function AboutUs() {
-  return <section className={`${styles.aboutUsContainer} container section`}>
+  return <section id='about-us' className={`${styles.aboutUsContainer} container section`}>
     <h2>Почему стоит выбрать нас?</h2>
     <p className={styles.content}>Мы предоставляем профессиональную помощь в обучении программированию и создании веб-проектов. Наши специалисты обеспечивают индивидуальный подход и понятное объяснение даже самых сложных тем. Качественно и в разумные сроки создадим веб-проект любой сложности — как с нуля, так и отдельную его часть.</p>
     <ul className={styles.benefits}>

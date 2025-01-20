@@ -1,8 +1,8 @@
 export const menu = [
-  {id: 1, link: '', text: 'О нас'},
+  {id: 1, link: '#about-us', text: 'О нас'},
   {id: 2, link: '#services', text: 'Услуги'},
-  {id: 3, link: '', text: 'Отзывы'},
-  {id: 4, link: '', text: 'Контакты'}
+  {id: 3, link: '#reviews', text: 'Отзывы'},
+  {id: 4, link: '#contacts', text: 'Контакты'}
 ]
 
 export const services = [

@@ -6,7 +6,7 @@ import VKontakte from './social-icons/vkontakte';
 import Facebook from './social-icons/facebook';
 
 export default function Contacts() {
-  return <section className={styles.contacts}>
+  return <section id='contacts' className={styles.contacts}>
     <div className={`${styles.contactsContainer} container`}>
       <h2>
         <span>Свяжитесь</span>

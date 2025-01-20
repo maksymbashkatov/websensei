@@ -1,7 +1,8 @@
 .service {
   display: grid;
+  grid-template-rows: repeat(3, auto) 1fr;
   row-gap: 8px;
-  max-width: 435px;
+  width: 435px;
 }
 
 .service > *:nth-child(1) {
@@ -35,8 +36,8 @@
   transition: 0.5s;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  max-width: 435px;
   overflow: hidden;
+  align-self: end;
 }
 
 .button:hover {
