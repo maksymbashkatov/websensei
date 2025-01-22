@@ -1,0 +1,28 @@
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-size: 60px;
+  font-weight: 700;
+
+  .p1 {
+    color: #681C23;
+    grid-row: span 2;
+    width: 148.5px;
+  }
+
+  .p2 {
+    color: #9B111E;
+    font-size: 32.4px;
+    margin-top: 1px;
+  }
+
+  .p3 {
+    font-size: 28px;
+    margin-top: -2px;
+  }
+}
+
+.logo p {
+  text-transform: uppercase;
+  line-height: 0.74;
+}
