@@ -2,11 +2,10 @@ import Link from 'next/link';
 import styles from './service.module.css';
 
 export default function Service(
-  { id, title, description, link }:
-  { id: number, title: string, description: string, link: string }
+  { title, description, link }:
+  { title: string, description: string, link: string }
 ) {
   return <div className={styles.service}>
-    <p>0{id}</p>
     <h3>{title}</h3>
     <p>{description}</p>
     <Link className={styles.button} href={link}>

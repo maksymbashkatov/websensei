@@ -1,0 +1,51 @@
+.service {
+  display: grid;
+  grid-template-rows: repeat(2, auto) 1fr;
+  row-gap: 8px;
+  width: 380px;
+  border-top: 4px solid #333333;
+  box-shadow: 0 0 10px #333333;
+}
+
+.service > *:nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  padding-top: 10px;
+  padding-left: 5px;
+  margin-left: -0.5px;
+}
+
+.service > *:nth-child(2) {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 5px;
+}
+
+.button {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #333333;
+  padding: 10px 0;
+  transition: 0.5s;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  overflow: hidden;
+  align-self: end;
+}
+
+.button:hover {
+  background-color: #BF2233;
+}
+
+.button p {
+  color: #FFF;
+  width: 380px;
+  transition: 0.5s;
+}
+
+.button:hover p {
+  margin-left: -100%;
+}

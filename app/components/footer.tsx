@@ -9,7 +9,7 @@ export default function Footer() {
         <h3>Предоставляемые услуги</h3>
         {
           services.map((service) =>
-            <Link href={service.link} key={service.id}>{service.text}</Link>
+            <Link href={`/uslugi/${service.slug}`} key={service.id}>{service.title}</Link>
           )
         }
       </div>
