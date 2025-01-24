@@ -1,3 +1,4 @@
+import { RefObject } from 'react';
 import styles from './reviews-static.module.css';
 
 const reviews = [
@@ -22,8 +23,8 @@ const reviews = [
 ]
 
 export default function ReviewsStatic(
-  { activeIndex, activeReview, inactiveReview }:
-  { activeIndex: number, activeReview: string, inactiveReview: string }
+  { activeIndex, activeReview, inactiveReview}:
+  { activeIndex: number, activeReview: string, inactiveReview: string}
 ) {
   return <>
     {

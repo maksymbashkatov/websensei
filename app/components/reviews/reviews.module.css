@@ -51,3 +51,18 @@
 .activeCircle {
   background-color: #9B111E;
 }
+
+@media (max-width: 1439px) {
+  .reviewsContainer {
+    column-gap: 144px;
+  }
+
+  .circlesContainer {
+    column-gap: 50px;
+  }
+  
+  .circle {
+    width: 25px;
+    height: 25px;
+  }
+}

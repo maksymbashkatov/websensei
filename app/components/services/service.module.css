@@ -52,3 +52,33 @@
 .button:hover p {
   margin-left: -100%;
 }
+
+@media (max-width: 1439px) {
+  .service {
+    row-gap: 4px;
+    width: 380px;
+  }
+
+  .service > *:nth-child(1) {
+    font-size: 30px;
+  }
+  
+  .service > *:nth-child(2) {
+    font-size: 19px;
+  }
+  
+  .service > *:nth-child(3) {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 15px;
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    padding: 8px 0;
+  }
+
+  .button p {
+    width: 380px;
+  }
+}

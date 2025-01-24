@@ -4,6 +4,7 @@
     'header list'
     'text list';
   row-gap: 20px;
+  column-gap: 10px;
 }
 
 .aboutUsContainer h2 {
@@ -58,4 +59,19 @@
   height: 8px;
   background-color: #9B111E;
   border-radius: 50%;
+}
+
+@media (max-width: 1439px) {
+  .aboutUsContainer h2 {
+    font-size: 38px;
+  }
+
+  .content {
+    font-size: 14px;
+    max-width: 660px;
+  }
+  
+  .benefits {
+    font-size: 14px;
+  }
 }

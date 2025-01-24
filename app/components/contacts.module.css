@@ -52,3 +52,24 @@
   width: 70px;
   height: 70px;
 }
+
+@media (max-width: 1439px) {
+  .contactsContainer h2 > *:nth-child(1) {
+    font-size: 108px;
+
+  }
+  
+  .contactsContainer h2 > *:nth-child(2) {
+    font-size: 54px;
+  }
+
+  .contactsContainer p {
+    max-width: 735px;
+    font-size: 18px;
+  }
+
+  .socials svg {
+    width: 63px;
+    height: 63px;
+  }
+}
