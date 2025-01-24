@@ -6,6 +6,7 @@
 }
 
 .footer h3 {
+  font-size: 15px;
   font-weight: 700;
   line-height: 1;
 }
@@ -81,5 +82,9 @@
 @media (max-width: 1439px) {
   .footer {
     font-size: 12px;
+  }
+
+  .footer h3 {
+    font-size: 13px;
   }
 }

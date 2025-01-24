@@ -15,7 +15,7 @@ export default async function ServicePage({ params }: { params: { slug: string }
     return <div>Услуга не найдена</div>;
   }
 
-  return (<>
+  return <>
     <Header title={service.title} price={service.price}/>
     <main className={`${styles.main} container section`}>
       {service.article}
@@ -31,6 +31,5 @@ export default async function ServicePage({ params }: { params: { slug: string }
         }
       </aside>
     </main>
-  </>
-  );
+  </>;
 }

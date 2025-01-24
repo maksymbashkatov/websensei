@@ -37,7 +37,7 @@
 }
 
 .button:hover {
-  background-color: #BF2233;
+  background-color: #9B111E;
 }
 
 .button p {
@@ -48,4 +48,27 @@
 
 .button:hover p {
   margin-left: -100%;
+}
+
+@media (max-width: 1439px) {
+  .service {
+    width: 320px
+  }
+
+  .service > *:nth-child(1) {
+    font-size: 15px;
+  }
+
+  .service > *:nth-child(2) {
+    font-size: 11px;
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 9px 0;
+  }
+
+  .button p {
+    width: 320px;
+  }
 }

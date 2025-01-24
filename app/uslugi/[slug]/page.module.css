@@ -1,6 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: repeat(2, auto);
+  column-gap: 6px;
   color: #262626;
   font-size: 14px;
   font-weight: 400;
@@ -24,4 +25,10 @@
   padding-bottom: 20px;
   text-transform: uppercase;
   margin-right: -4px;
+}
+
+@media (max-width: 1439px) {
+  .more > *:nth-child(1) {
+    font-size: 36px;
+  }
 }
