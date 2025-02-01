@@ -9,3 +9,9 @@
 .svg:hover .p2 {
   fill: #FFFFFF;
 }
+
+@media (max-width: 540px) {  
+  .svg path {
+    transition: 0.1s;
+  }
+}

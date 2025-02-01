@@ -61,7 +61,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 1439px) {
+@media (min-width: 541px) and (max-width: 1439px) {
   .aboutUsContainer h2 {
     font-size: 38px;
   }
@@ -73,5 +73,56 @@
   
   .benefits {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .aboutUsContainer {
+    grid-template-areas:
+      'header'
+      'text'
+      'list';
+    row-gap: 20px;
+    column-gap: 0;
+  }
+
+  .aboutUsContainer h2 {
+    font-size: 21px;
+    margin-left: -1px;
+  }
+
+  .content {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 12px 0 12px 12px;
+    border-left: 4px solid #9B111E;
+  }
+
+  .benefits {
+    justify-self: start;
+    grid-template-columns: auto;
+    row-gap: 7px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 16px 0 16px 16px;
+    border-top: none;
+    border-left: 4px solid #9B111E;
+    width: 100%;
+    background-color: rgba(155, 17, 30, 0.75);
+  }
+  
+  .benefits li {
+    padding-left: 0;
+  }
+  
+  .benefits li::before {
+    display: none;
+  }
+}
+
+@media (max-width: 393px) {
+  .aboutUsContainer h2 {
+    font-size: 19.26px;
   }
 }

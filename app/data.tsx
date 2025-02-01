@@ -1,4 +1,4 @@
-import RepetitorPoProgrammirovaniyu from "./uslugi/components/articles/repetitor-po-programmirovaniyu";
+import RepetitorPoProgrammirovaniyu from './uslugi/components/articles/repetitor-po-programmirovaniyu';
 
 export const menu = [
   {id: 1, link: '#about-us', text: 'О нас'},

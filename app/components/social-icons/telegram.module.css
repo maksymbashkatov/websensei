@@ -13,3 +13,13 @@
 .svg:hover path {
   fill: #FFFFFF;
 }
+
+@media (max-width: 540px) {
+  .svg circle {
+    transition: 0.1s;
+  }
+  
+  .svg path {
+    transition: 0.1s;
+  }
+}
