@@ -50,7 +50,7 @@
   margin-left: -100%;
 }
 
-@media (max-width: 1439px) {
+@media (min-width: 541px) and (max-width: 1439px) {
   .service {
     width: 320px
   }
@@ -70,5 +70,34 @@
 
   .button p {
     width: 320px;
+  }
+}
+
+@media (max-width: 540px) {
+  .service {
+    width: 100%;
+  }
+
+  .button {
+    grid-template-columns: auto;
+    transition: 0.1s;
+  }
+
+  .button > p:nth-child(2) {
+    display: none;
+  }
+
+  .button p {
+    width: 100%;
+  }
+
+  .button:hover p {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 393px) {
+  .service > *:nth-child(1) {
+    font-size: 16.5px;
   }
 }

@@ -17,7 +17,7 @@ export default function Footer() {
         <h3 className={styles.h3S}>Меню</h3>
         {
           menu.map((item) =>
-            <Link href={item.link} key={item.id}>{item.text}</Link>
+            <Link href={`/${item.link}`} key={item.id}>{item.text}</Link>
           )
         }
       </div>

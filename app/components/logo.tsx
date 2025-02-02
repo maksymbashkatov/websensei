@@ -2,7 +2,7 @@ import styles from './logo.module.css';
 import Link from 'next/link';
 
 export default function Logo(
-  { className = '' }: { className: string }
+  { className = '' }: { className?: string }
 ) {
   return <Link className={`${styles.logo} ${className}`} href='/'>
     <p className={styles.p1}>web</p>

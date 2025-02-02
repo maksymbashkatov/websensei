@@ -27,8 +27,37 @@
   margin-right: -4px;
 }
 
-@media (max-width: 1439px) {
+@media (min-width: 541px) and (max-width: 1439px) {
   .more > *:nth-child(1) {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main {
+    grid-template-columns: auto;
+    column-gap: 0;
+    row-gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .more {
+    grid-template-columns: auto;
+    column-gap: 0;
+  }
+
+  .more > *:nth-child(1) {
+    justify-self: start;
+    grid-column: 1 / 1;
+    font-size: 25.9px;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 393px) {
+  .more > *:nth-child(1) {
+    font-size: 23.5px;
   }
 }
