@@ -2,6 +2,7 @@
   display: grid;
   row-gap: 20px;
   max-width: 600px;
+  font-size: 15px;
 }
 
 .article h2 {
@@ -12,7 +13,17 @@
   margin-bottom: -14px;
 }
 
+@media (min-width: 541px) and (max-width: 1439px) {
+  .article {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 540px) {
+  .article {
+    font-size: 14px;
+  }
+
   .article h2 {
     font-size: 26px;
   }

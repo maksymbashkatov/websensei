@@ -1,4 +1,6 @@
+import styles from './uslugi/components/articles/article.module.css';
 import RepetitorPoProgrammirovaniyu from './uslugi/components/articles/repetitor-po-programmirovaniyu';
+import SozdanieVebProektaSNulya from './uslugi/components/articles/sozdanie-veb-proekta-s-nulya';
 
 export const menu = [
   {id: 1, link: '#about-us', text: 'О нас'},
@@ -14,7 +16,7 @@ export const services = [
     title: 'Репетитор по программированию',
     description: 'Вы родитель и хотите, чтобы ваш ребёнок в будущем стал программистом? Вы студент или начинающий разработчик и вам нужен репетитор по веб-программированию? Поможем освоить ключевые веб-технологии с нуля, такие как JavaScript, TypeScript, SQL, HTML и CSS, с индивидуальным подходом, гибким графиком занятий и комфортным онлайн форматом. Наш опыт и профессионализм обеспечат эффективное и понятное обучение. Поможем решить любые задачи.',
     price: 1200,
-    article: <RepetitorPoProgrammirovaniyu/>
+    article: <RepetitorPoProgrammirovaniyu styles={styles.article}/>
   },
   {
     id: 2,
@@ -46,6 +48,6 @@ export const services = [
     title: 'Создание веб-проекта с нуля',
     description: 'Мы предлагаем создание сайта с нуля, разрабатывая дизайн под ваши индивидуальные требования. Применяем современные технологии и свежие подходы SEO оптимизации. Не используем конструкторы, каждая строка кода написана нашими программистами с нуля, что в свою очередь обеспечивает уникальность не только контента, но и кода, а значит улучшает SEO показатели. Разработаем сайт под ключ, будь то Landing Page, сайт визитка или другой веб-проект, в оговоренные сроки.',
     price: 9000,
-    article: 'Описание услуги 5'
+    article: <SozdanieVebProektaSNulya styles={styles.article}/>
   }
 ];
