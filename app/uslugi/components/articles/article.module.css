@@ -13,6 +13,19 @@
   margin-bottom: -14px;
 }
 
+.article a {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+.article a:hover {
+  text-decoration: none;
+}
+
+.article a:focus {
+  color: #9B111E;
+}
+
 @media (min-width: 541px) and (max-width: 1439px) {
   .article {
     font-size: 14px;

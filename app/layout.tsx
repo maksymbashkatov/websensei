@@ -3,8 +3,8 @@ import './globals.css';
 import Footer from './components/footer';
 
 export const metadata: Metadata = {
-  title: 'WebSensei APP',
-  description: 'Test description',
+  title: 'Репетитор по программированию онлайн',
+  description: 'Репетитор по программированию онлайн. Доступны как индивидуальные занятия по веб-программированию, так и менторинг. Создаём сайты с нуля для любых целей.',
 };
 
 export const viewport: Viewport = {

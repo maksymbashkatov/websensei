@@ -94,7 +94,7 @@ a {
   line-height: 1;
 }
 
-a:hover, .a:focus {
+a:hover, a:focus {
   color: inherit;
   text-decoration: none;
 }
