@@ -23,7 +23,11 @@ export default function Header(
           }
         </nav>
         <div className={styles.socials}>
-          <Link href={''}><Telegram fill={'#262626'}/></Link>
+          <Link
+            href='https://t.me/websensei_online'
+            target='_blank'
+            rel='nofollow noopener noreferrer'
+          ><Telegram fill={'#262626'}/></Link>
           <Link href={''}><WhatsApp/></Link>
           <Link href={''}><VKontakte fill={'#262626'}/></Link>
           <Link href={''}><Facebook fill={'#262626'}/></Link>
@@ -48,7 +52,12 @@ export default function Header(
           </h1>
           <h2>Индивидуальные занятия и менторинг по веб-программированию. Научим программировать и создавать веб-проекты с нуля.</h2>
         </div>
-        <Link className={styles.button} href=''>Хочу учиться</Link>
+        <Link
+          className={styles.button}
+          href='https://t.me/websensei_online'
+          target='_blank'
+          rel='nofollow noopener noreferrer'
+        >Хочу учиться</Link>
       </div>
     </div>
     <div className={`${styles.mobMenu} ${isMenuOpen ? styles.mobMenuOpen : ''}`}>

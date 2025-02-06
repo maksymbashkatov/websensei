@@ -14,7 +14,11 @@ export default function Contacts() {
       </h2>
       <p>Хотите быстрее получить помощь в обучении или создании веб-проекта? Напишите нам в удобном для вас мессенджере, и наш менеджер оперативно свяжется с вами.</p>
       <div className={styles.socials}>
-        <Link href={''}><Telegram fill={'#000'}/></Link>
+        <Link
+          href='https://t.me/websensei_online'
+          target='_blank'
+          rel='nofollow noopener noreferrer'
+        ><Telegram fill={'#000'}/></Link>
         <Link href={''}><WhatsApp/></Link>
         <Link href={''}><VKontakte fill={'#000'}/></Link>
         <Link href={''}><Facebook fill={'#000'}/></Link>

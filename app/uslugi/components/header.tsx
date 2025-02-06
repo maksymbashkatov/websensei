@@ -14,8 +14,12 @@ export default function Header(
         <p>от {price} RUB</p>
       </div>
       <div className={styles.todo}>
-        <Link href='' className={styles.button}>
-          <p>Написать</p>
+        <Link
+          href='https://t.me/websensei_online'
+          target='_blank'
+          rel='nofollow noopener noreferrer'
+          className={styles.button}
+        ><p>Написать</p>
         </Link>
         <p>нам, чтобы обсудить цену и условия</p>
       </div>
