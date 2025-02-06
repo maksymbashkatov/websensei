@@ -4,8 +4,13 @@ import styles from './page.module.css';
 import { services } from '../../data';
 import Service from '../components/service';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const { slug } = await params;
+interface MyPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: MyPageProps): Promise<Metadata> {
+  const resolvedParams = Promise.resolve(params) as Promise<{ slug: string }>;
+  const { slug } = await resolvedParams;
   const service = services.find((item) => item.slug === slug);
   return {
     title: service?.metaTitle,
@@ -13,8 +18,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function ServicePage({ params }: { params: { slug: string } }) {
-  const { slug } = await params;
+export default async function ServicePage({ params }: MyPageProps) {
+  const resolvedParams = Promise.resolve(params) as Promise<{ slug: string }>;
+  const { slug } = await resolvedParams;
   const service = services.find((item) => item.slug === slug);
 
   if (!service) {

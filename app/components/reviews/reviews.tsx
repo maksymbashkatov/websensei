@@ -10,7 +10,7 @@ export default function Reviews() {
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
-  })
+  }, [])
 
   const handleCircleClick = (index: number) => {
     setActiveIndex(index);
