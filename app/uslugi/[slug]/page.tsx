@@ -4,12 +4,17 @@ import styles from './page.module.css';
 import { services } from '../../data';
 import Service from '../components/service';
 
-export const metadata: Metadata = {};
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = services.find((item) => item.slug === slug);
+  return {
+    title: service?.title,
+  };
+}
 
 export default async function ServicePage({ params }: { params: { slug: string } }) {
   const { slug } = await params;
   const service = services.find((item) => item.slug === slug);
-  metadata.title = service?.title;
 
   if (!service) {
     return <div>Услуга не найдена</div>;
