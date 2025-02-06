@@ -61,7 +61,6 @@
 
 .button {
   background-color: #FFF;
-  color: #9B111E;
   font-size: 23px;
   font-weight: 700;
   padding: 7px 10px 5px 10px;
@@ -72,8 +71,17 @@
   width: fit-content;
 }
 
+.button p {
+  color: #9B111E;
+  transition: 0.5s;
+}
+
 .button:hover {
   background-color: #9B111E;
+}
+
+.button:hover p {
+  color: #FFF;
 }
 
 .todo > *:nth-child(2) {

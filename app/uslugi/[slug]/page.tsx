@@ -8,7 +8,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const { slug } = await params;
   const service = services.find((item) => item.slug === slug);
   return {
-    title: service?.title,
+    title: service?.metaTitle,
+    description: service?.metaDescription
   };
 }
 
