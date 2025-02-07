@@ -8,6 +8,12 @@ interface MyPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateStaticParams() {
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
+}
+
 export async function generateMetadata({ params }: MyPageProps): Promise<Metadata> {
   const resolvedParams = Promise.resolve(params) as Promise<{ slug: string }>;
   const { slug } = await resolvedParams;
