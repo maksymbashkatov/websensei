@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: 'Репетитор по программированию онлайн. Доступны как индивидуальные занятия по веб-программированию, так и менторинг. Создаём сайты с нуля для любых целей.',
   other: {
     'yandex-verification': 'b84c98b2b82b3ada',
+    'google-site-verification': '3Uq2zk1XUeAbOuwc87n4CoLHkJSI6_m7F8lX4-JZUOA'
   }
 };
 
