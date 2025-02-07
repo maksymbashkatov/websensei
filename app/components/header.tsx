@@ -47,8 +47,8 @@ export default function Header(
       <div className={`${styles.headerMainContainer} container`}>
         <div className={styles.mainTitle}>
           <h1>
-            <span className={styles.s1}>Репетитор и ментор </span>
-            <span className={styles.s2}>по веб-программированию онлайн</span>
+            <span className={styles.s1}>Репетитор и ментор</span>
+            <span className={styles.s2}> по веб-программированию онлайн</span>
           </h1>
           <h2>Индивидуальные занятия и менторинг по веб-программированию. Научим программировать и создавать веб-проекты с нуля.</h2>
         </div>

@@ -21,21 +21,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    'name': 'Репетитор по программированию онлайн',
-    'description': 'Репетитор по программированию онлайн. Доступны как индивидуальные занятия по веб-программированию, так и менторинг. Создаём сайты с нуля для любых целей.'
-  };
-
   return (
     <html lang='ru'>
-      <head>
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </head>
       <body>
         {children}
         <Footer/>
