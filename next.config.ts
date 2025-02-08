@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     appIsrStatus: false,
   },
   output: 'export',
+  trailingSlash: true
 }
 
 export default nextConfig;

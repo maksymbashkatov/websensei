@@ -44,7 +44,7 @@ export default async function ServicePage({ params }: MyPageProps) {
             key={service.id}
             title={service.title}
             description={service.description}
-            link={service.slug}
+            link={`/uslugi/${service.slug}`}
           />)
         }
       </aside>
