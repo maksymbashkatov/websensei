@@ -20,7 +20,10 @@ export async function generateMetadata({ params }: MyPageProps): Promise<Metadat
   const service = services.find((item) => item.slug === slug);
   return {
     title: service?.metaTitle,
-    description: service?.metaDescription
+    description: service?.metaDescription,
+    alternates: {
+      canonical: `https://websensei.online/uslugi/${service?.slug}`,
+    }
   };
 }
 
