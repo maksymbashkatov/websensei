@@ -4,8 +4,9 @@ const nextConfig: NextConfig = {
   devIndicators: {
     appIsrStatus: false,
   },
-  output: 'export',
-  trailingSlash: true
+  // output: 'export',
+  // trailingSlash: true
+  trailingSlash: false
 }
 
 export default nextConfig;
