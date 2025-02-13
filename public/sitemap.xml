@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://websensei.online</loc>
+        <lastmod>2025-02-13T14:10:06+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://websensei.online/uslugi/repetitor-po-programmirovaniyu</loc>
+        <lastmod>2025-02-13T14:10:06+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://websensei.online/uslugi/mentor-po-programmirovaniyu</loc>
+        <lastmod>2025-02-13T14:10:06+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://websensei.online/uslugi/sozdanie-veb-proekta-dlya-studentov</loc>
+        <lastmod>2025-02-13T14:10:06+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://websensei.online/uslugi/sozdanie-veb-proekta-dlya-uchenikov</loc>
+        <lastmod>2025-02-13T14:10:06+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://websensei.online/uslugi/sozdanie-veb-proekta-s-nulya</loc>
+        <lastmod>2025-02-13T14:10:06+00:00</lastmod>
+    </url>
+</urlset>
