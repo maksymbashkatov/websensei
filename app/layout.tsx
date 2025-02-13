@@ -5,6 +5,9 @@ import Footer from './components/footer';
 export const metadata: Metadata = {
   title: 'Репетитор по программированию онлайн',
   description: 'Репетитор по программированию онлайн. Доступны как индивидуальные занятия по веб-программированию, так и менторинг. Создаём сайты с нуля для любых целей.',
+  alternates: {
+    canonical: `https://websensei.online`,
+  },
   icons: [
     { rel: 'icon', url: '/favicon.ico' },
     { rel: 'icon', url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
