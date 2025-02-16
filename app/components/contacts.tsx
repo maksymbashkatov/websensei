@@ -1,5 +1,4 @@
 import styles from './contacts.module.css';
-import Link from 'next/link';
 import Telegram from './social-icons/telegram';
 import WhatsApp from './social-icons/whatsapp';
 import VKontakte from './social-icons/vkontakte';
@@ -14,14 +13,10 @@ export default function Contacts() {
       </h2>
       <p>Хотите быстрее получить помощь в обучении или создании веб-проекта? Напишите нам в удобном для вас мессенджере, и наш менеджер оперативно свяжется с вами.</p>
       <div className={styles.socials}>
-        <Link
-          href='https://t.me/websensei_online'
-          target='_blank'
-          rel='nofollow noopener noreferrer'
-        ><Telegram fill={'#000'}/></Link>
-        <Link href={''}><WhatsApp/></Link>
-        <Link href={''}><VKontakte fill={'#000'}/></Link>
-        <Link href={''}><Facebook fill={'#000'}/></Link>
+        <Telegram fill={'#000'} />
+        <WhatsApp/>
+        <VKontakte fill={'#000'}/>
+        <Facebook fill={'#000'}/>
       </div>
     </div>
   </section>

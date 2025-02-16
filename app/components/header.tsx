@@ -23,14 +23,10 @@ export default function Header(
           }
         </nav>
         <div className={styles.socials}>
-          <Link
-            href='https://t.me/websensei_online'
-            target='_blank'
-            rel='nofollow noopener noreferrer'
-          ><Telegram fill={'#262626'}/></Link>
-          <Link href={''}><WhatsApp/></Link>
-          <Link href={''}><VKontakte fill={'#262626'}/></Link>
-          <Link href={''}><Facebook fill={'#262626'}/></Link>
+          <Telegram fill={'#262626'}/>
+          <WhatsApp/>
+          <VKontakte fill={'#262626'}/>
+          <Facebook fill={'#262626'}/>
         </div>
         <div className={styles.mobMenuButton} onClick={toggleMenu}>
           {

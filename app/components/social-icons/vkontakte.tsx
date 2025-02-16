@@ -1,9 +1,14 @@
+import Link from 'next/link';
 import styles from './vkontakte.module.css';
 
 export default function VKontakte(
   { fill }: { fill: string }
 ) {
-  return (
+  return (<Link 
+    href='https://vk.com/websenseionline'
+    target='_blank'
+    rel='nofollow noopener noreferrer'
+  >
     <svg className={styles.svg}
       viewBox='0 0 101 100'
       width='32'
@@ -19,5 +24,6 @@ export default function VKontakte(
         fill={fill}
       />
     </svg>
+  </Link>
   );
 }

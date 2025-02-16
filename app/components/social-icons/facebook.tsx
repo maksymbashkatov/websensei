@@ -1,9 +1,14 @@
+import Link from 'next/link';
 import styles from './facebook.module.css';
 
 export default function Facebook(
   { fill }: { fill: string }
 ) {
-  return (
+  return (<Link 
+    href='https://facebook.com/websenseionline'
+    target='_blank'
+    rel='nofollow noopener noreferrer'
+  >
     <svg className={styles.svg}
       viewBox='0 0 36 36'
       width='32'
@@ -19,5 +24,6 @@ export default function Facebook(
         fill={fill}
       />
     </svg>
+  </Link>
   );
 }
