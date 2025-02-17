@@ -1,0 +1,4 @@
+User-agent: *
+
+Sitemap: https://websensei.online/sitemap.xml
+Host: https://websensei.online
