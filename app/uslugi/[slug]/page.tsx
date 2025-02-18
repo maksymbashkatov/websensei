@@ -17,7 +17,10 @@ async function getCountry() {
     return 'RU';
   }
 
-  const response = await fetch(`https://ipinfo.io/${ip}?token=060430e67a21e3`);
+  const response = await fetch(
+    `https://ipinfo.io/${ip}?token=060430e67a21e3`,
+    { next: { revalidate: 604800 } }
+  );
 
   if (!response.ok) {
     return 'RU';
