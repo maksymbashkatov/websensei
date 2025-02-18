@@ -12,7 +12,7 @@ import SozdanieVebProektaSNulya from '../components/articles/sozdanie-veb-proekt
 
 async function getCountry() {
   const headersList = await headers();
-  const ip = headersList.get('x-forwarded-for') || '';
+  const ip = headersList.get('x-real-ip') || '';
   if (!ip) {
     return 'RU';
   }
