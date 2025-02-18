@@ -3,7 +3,7 @@ import Logo from '../../components/logo';
 import Link from 'next/link';
 
 export default function Header(
-  { title, price}: { title: string, price: number }
+  { title, price}: { title: string, price: string }
 ) {
   return <header className={styles.header}>
     <div className={`${styles.headerContainer} container`}>
@@ -11,7 +11,7 @@ export default function Header(
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.price}>
         <p>Цена</p>
-        <p>от {price} RUB</p>
+        <p>от {price}</p>
       </div>
       <div className={styles.todo}>
         <Link
