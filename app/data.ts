@@ -10,7 +10,7 @@ export const prices = [
   { id: 2, price: 7000 },
   { id: 3, price: 4000 },
   { id: 4, price: 6000 },
-  { id: 5, price: 9000 }
+  { id: 5, price: 15000 }
 ]
 
 function getPrice(id: number) {
