@@ -21,7 +21,7 @@ export default function Header(
           className={styles.button}
         ><p>Написать</p>
         </Link>
-        <p>нам, чтобы обсудить цену и условия</p>
+        <p>чтобы обсудить цену и условия</p>
       </div>
     </div>
   </header>;

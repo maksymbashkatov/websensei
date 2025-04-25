@@ -1,64 +1,52 @@
 .services {
-  background-color: #262626;
+  background: radial-gradient(at 7.4120053611866465% 26.61598349493115%, hsla(0, 0%, 14.901960784313726%, 1) 0%, hsla(0, 0%, 14.901960784313726%, 0) 100%), radial-gradient(at 77.1417117625145% 78.11073997974056%, hsla(0, 0%, 23.52941176470588%, 1) 0%, hsla(0, 0%, 23.52941176470588%, 0) 100%), radial-gradient(at 47.859654789638824% 3.684680053221623%, hsla(0, 0%, 36.07843137254902%, 1) 0%, hsla(0, 0%, 36.07843137254902%, 0) 100%), radial-gradient(at 21.928959066240104% 81.7656618932729%, hsla(354.34782608695656, 80.23255813953489%, 33.725490196078425%, 1) 0%, hsla(354.34782608695656, 80.23255813953489%, 33.725490196078425%, 0) 100%), radial-gradient(at 5.3170366686623005% 65.76403427794106%, hsla(0, 0%, 14.901960784313726%, 1) 0%, hsla(0, 0%, 14.901960784313726%, 0) 100%), radial-gradient(at 15.966921890542851% 82.7307289096501%, hsla(0, 0%, 23.52941176470588%, 1) 0%, hsla(0, 0%, 23.52941176470588%, 0) 100%), radial-gradient(at 91.80464757463295% 98.42906519285279%, hsla(0, 0%, 36.07843137254902%, 1) 0%, hsla(0, 0%, 36.07843137254902%, 0) 100%), radial-gradient(at 26.731775827544023% 44.7975997144145%, hsla(354.34782608695656, 80.23255813953489%, 33.725490196078425%, 1) 0%, hsla(354.34782608695656, 80.23255813953489%, 33.725490196078425%, 0) 100%), radial-gradient(at 64.6525209364337% 96.56300610298116%, hsla(0, 0%, 14.901960784313726%, 1) 0%, hsla(0, 0%, 14.901960784313726%, 0) 100%), radial-gradient(at 92.19062210211098% 83.06509693917594%, hsla(0, 0%, 23.52941176470588%, 1) 0%, hsla(0, 0%, 23.52941176470588%, 0) 100%), radial-gradient(at 88.80588296819187% 61.23194150817317%, hsla(0, 0%, 36.07843137254902%, 1) 0%, hsla(0, 0%, 36.07843137254902%, 0) 100%);
 }
 
 .servicesContainer {
   display: grid;
   justify-content: space-between;
-  align-content: space-between;
-  row-gap: 10px;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
-  background-image: url(/services.jpg);
+  row-gap: 20px;
+  column-gap: 40px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
   background-repeat: no-repeat;
   background-position: right 0 bottom 0;
-  min-height: 100vh;
-  padding: 20px 20px;
-}
-
-.servicesContainer > *:nth-child(2) {
-  grid-row: 1 / 2;
+  padding: 40px 20px;
 }
 
 .title {
   width: fit-content;
-  grid-column: 2 / 4;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  grid-column: span 2;
   justify-self: end;
   align-self: center;
+  margin-right: -7px;
+  padding-bottom: 20px;
 }
 
 .title span {
   display: block;
+  font-size: 72px;
+  font-weight: 200;
+  text-transform: uppercase;
   line-height: 0.74;
   width: fit-content;
 }
 
-.title > *:nth-child(1) {
-  color: #5C5C5C;
-  text-transform: uppercase;
-  font-size: 72px;
-  font-weight: 700;
-  padding-bottom: 40px;
-  position: relative;
-  left: 2.5px;
-}
-
-.title > *:nth-child(2) {
-  color: #3C3C3C;
-  text-transform: uppercase;
-  font-size: 193px;
-  font-weight: 700;
-  position: relative;
-  left: 16px;
-}
-
 @media (min-width: 541px) and (max-width: 1439px) {
-  .title > *:nth-child(1) {
-    font-size: 61px;
+  .title {
+    margin-right: 0;
+    justify-self: center;
   }
-  
-  .title > *:nth-child(2) {
-    font-size: 164px;
+
+  .title span {
+    font-size: 44px;
+  }
+
+  .servicesContainer {
+    column-gap: 20px;
   }
 }
 
@@ -67,43 +55,28 @@
     justify-content: start;
     align-content: start;
     grid-template-columns: auto;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(7, auto);
     row-gap: 40px;
     background-image: none;
     min-height: 100vh;
     padding: 40px 5px;
   }
 
-  .servicesContainer > *:nth-child(2) {
-    grid-row: 2 / 3;
+  .title span {
+    font-size: 23px;
   }
 
   .title {
     grid-column: 1 / 2;
-    justify-self: start;
-  }
-
-  .title > *:nth-child(1) {
-    font-size: 31.6px;
-    padding-bottom: 8px;
-    left: 0px;
-    width: 100%;
-  }
-  
-  .title > *:nth-child(2) {
-    font-size: 85.7px;
-    left: 2.5px;
-    width: 100%;
+    margin-right: 0;
+    justify-self: center;
+    column-gap: 8px;
+    padding-bottom: 0;
   }
 }
 
 @media (max-width: 393px) {
-  .title > *:nth-child(1) {
-    font-size: 28.9px;
-  }
-  
-  .title > *:nth-child(2) {
-    font-size: 78.4px;
-    left: 2px;
+  .title span {
+    font-size: 21px;
   }
 }

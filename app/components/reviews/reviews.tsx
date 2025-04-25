@@ -34,7 +34,7 @@ export default function Reviews() {
   };
   
   return <section id='reviews' className={`${styles.reviews} section`}>
-    <h2 className={styles.title}>Что говорят о нас клиенты?</h2>
+    <h2 className={styles.title}>Что говорят обо мне клиенты?</h2>
     <div className={styles.reviewsContainer} style={{ transform: calculateTransform() }}>
       <ReviewsStatic
         activeIndex={activeIndex}

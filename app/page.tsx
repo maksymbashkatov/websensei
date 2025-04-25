@@ -1,4 +1,4 @@
-import AboutUs from './components/about-us';
+import AboutMe from './components/about-us';
 import Services from './components/services/services';
 import Contacts from './components/contacts';
 import Reviews from './components/reviews/reviews';
@@ -9,7 +9,7 @@ export default function Page() {
     <>
       <HeaderClient/>
       <main>
-        <AboutUs/>
+        <AboutMe/>
         <Services/>
         <Reviews/>
         <Contacts/>

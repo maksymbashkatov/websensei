@@ -18,8 +18,9 @@
 }
 
 .title {
-  font-size: 45px;
-  font-weight: 700;
+  /* font-size: 45px; */
+  font-size: 36px;
+  font-weight: 300;
   line-height: 0.74;
   text-transform: uppercase;
   grid-column: 2 / 4;

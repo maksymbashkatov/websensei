@@ -5,7 +5,7 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Репетитор по программированию онлайн',
-  description: 'Репетитор по программированию онлайн. Доступны как индивидуальные занятия по веб-программированию, так и менторинг. Создаём сайты с нуля для любых целей.',
+  description: 'Индивидуальные занятия по ключевым веб-технологиям: JavaScript, TypeScript, HTML, CSS и SQL. Обучение от профессионала с практическим опытом свыше восьми лет.',
   alternates: {
     canonical: `https://websensei.online`,
   },

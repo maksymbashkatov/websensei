@@ -4,11 +4,12 @@ import styles from './page.module.css';
 import { services } from '../../data';
 import Service from '../components/service';
 import { headers } from 'next/headers';
-import RepetitorPoProgrammirovaniyu from '../components/articles/repetitor-po-programmirovaniyu';
+import RepetitorPoProgrammirovaniyuJavaScript from '../components/articles/repetitor-po-programmirovaniyu-javascript';
+import RepetitorPoProgrammirovaniyuTypeScript from '../components/articles/repetitor-po-programmirovaniyu-typescript';
+import RepetitorPoVebVyorstke from '../components/articles/repetitor-po-veb-vyorstke';
+import RepetitorPoProgrammirovaniyuSQL from '../components/articles/repetitor-po-programmirovaniyu-sql';
 import MentorPoProgrammirovaniyu from '../components/articles/mentor-po-programmirovaniyu';
-import SozdanieVebProektaDlyaStudentov from '../components/articles/sozdanie-veb-proekta-dlya-studentov';
-import SozdanieVebDroektaDlyaUchenikov from '../components/articles/sozdanie-veb-proekta-dlya-uchenikov';
-import SozdanieVebProektaSNulya from '../components/articles/sozdanie-veb-proekta-s-nulya';
+import SozdanieVebProektaDlyaUchyoby from '../components/articles/sozdanie-veb-proekta-dlya-uchyoby';
 
 async function getCountry() {
   const headersList = await headers();
@@ -84,14 +85,15 @@ export default async function ServicePage({ params }: MyPageProps) {
     <Header title={service.title} price={price}/>
     <main className={`${styles.main} container section`}>
       {
-        service.id === 1 ? <RepetitorPoProgrammirovaniyu price={price}/> :
-        service.id === 2 ? <MentorPoProgrammirovaniyu price={price}/> :
-        service.id === 3 ? <SozdanieVebProektaDlyaStudentov price={price}/> :
-        service.id === 4 ? <SozdanieVebDroektaDlyaUchenikov price={price}/> :
-        <SozdanieVebProektaSNulya price={price}/>
+        service.id === 1 ? <RepetitorPoProgrammirovaniyuJavaScript price={price}/> :
+        service.id === 2 ? <RepetitorPoProgrammirovaniyuTypeScript price={price}/> :
+        service.id === 3 ? <RepetitorPoVebVyorstke price={price}/> :
+        service.id === 4 ? <RepetitorPoProgrammirovaniyuSQL price={price}/> :
+        service.id === 5 ? <MentorPoProgrammirovaniyu price={price}/> :
+        <SozdanieVebProektaDlyaUchyoby price={price}/>
       }
       <aside className={styles.more}>
-        <h2>Что ещё мы предлагаем</h2>
+        <h2>Ещё услуги для вас</h2>
         {
           (services.filter((e) => e.slug !== slug)).map((service) => <Service
             key={service.id}
