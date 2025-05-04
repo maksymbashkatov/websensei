@@ -98,7 +98,6 @@ export default async function ServicePage({ params }: MyPageProps) {
           (services.filter((e) => e.slug !== slug)).map((service) => <Service
             key={service.id}
             title={service.title}
-            description={service.description}
             link={`/uslugi/${service.slug}`}
           />)
         }

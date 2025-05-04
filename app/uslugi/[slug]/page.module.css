@@ -1,16 +1,14 @@
 .main {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  column-gap: 6px;
+  column-gap: 40px;
   color: #262626;
-  font-size: 14px;
   font-weight: 400;
 }
 
 .more {
   color: #333333;
   display: grid;
-  grid-template-columns: repeat(2, auto);
   align-self: start;
   justify-self: end;
   gap: 20px;
@@ -18,13 +16,12 @@
 
 .more > *:nth-child(1) {
   justify-self: end;
-  grid-column: 1 / 3;
   font-size: 40px;
   font-weight: 100;
   line-height: 1;
   padding-bottom: 20px;
   text-transform: uppercase;
-  margin-right: -4px;
+  position: relative;
 }
 
 @media (min-width: 541px) and (max-width: 1439px) {

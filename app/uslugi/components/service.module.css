@@ -1,75 +1,51 @@
 .service {
   display: grid;
-  grid-template-rows: repeat(2, auto) 1fr;
+  grid-template-rows: repeat(2, auto);
   row-gap: 8px;
-  width: 380px;
-  border-top: 4px solid #333333;
-  box-shadow: 0 0 10px #333333;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px 5px;
 }
 
 .service > *:nth-child(1) {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1;
-  padding-top: 10px;
-  padding-left: 5px;
-  margin-left: -0.5px;
-}
-
-.service > *:nth-child(2) {
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 400;
-  padding: 0 5px;
+  line-height: normal;
+  margin-left: -0.5px;
 }
 
 .button {
   text-transform: uppercase;
   text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: #333333;
-  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #D87E6D;
+  padding: 12px;
   transition: 0.5s;
   display: grid;
-  grid-template-columns: repeat(2, auto);
   overflow: hidden;
   align-self: end;
+  width: fit-content;
+  border-radius: 8px;
 }
 
 .button:hover {
-  background-color: #9B111E;
+  background-color: #CD5B45;
 }
 
 .button p {
   color: #FFF;
-  width: 380px;
   transition: 0.5s;
 }
 
-.button:hover p {
-  margin-left: -100%;
-}
-
 @media (min-width: 541px) and (max-width: 1439px) {
-  .service {
-    width: 320px
-  }
-
   .service > *:nth-child(1) {
     font-size: 15px;
   }
 
-  .service > *:nth-child(2) {
-    font-size: 11px;
-  }
-
   .button {
-    font-size: 15px;
-    padding: 9px 0;
-  }
-
-  .button p {
-    width: 320px;
+    font-size: 13px;
+    padding: 10px;
   }
 }
 
