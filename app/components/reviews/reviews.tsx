@@ -1,12 +1,17 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, TouchEvent } from 'react';
 import styles from './reviews.module.css';
 import ReviewsStatic from './reviews-static';
 
 export default function Reviews() {
-  const [activeIndex, setActiveIndex] = useState(2);
+  const [activeIndex, setActiveIndex] = useState(1);
   const [screenWidth, setScreenWidth] = useState(NaN);
+
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX,   setTouchEndX]   = useState<number | null>(null);
+  const minSwipeDistance = 50;
+
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -32,10 +37,40 @@ export default function Reviews() {
     const offset = containerWidth + gap;
     return `translateX(calc(${(2 - activeIndex) * offset}px))`;
   };
+
+  const onTouchStart = (e: TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+  
+  const onTouchMove = (e: TouchEvent) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+  
+  const onTouchEnd = () => {
+    if (touchStartX === null || touchEndX === null) return;
+    const delta = touchStartX - touchEndX;
+
+    if (delta > minSwipeDistance && activeIndex < 3) {
+      setActiveIndex(activeIndex + 1);
+    }
+
+    if (delta < -minSwipeDistance && activeIndex > 1) {
+      setActiveIndex(activeIndex - 1);
+    }
+
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
   
   return <section id='reviews' className={`${styles.reviews} section`}>
     <h2 className={styles.title}>Что говорят обо мне клиенты?</h2>
-    <div className={styles.reviewsContainer} style={{ transform: calculateTransform() }}>
+    <div
+      className={styles.reviewsContainer}
+      style={{ transform: calculateTransform() }}
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
       <ReviewsStatic
         activeIndex={activeIndex}
         activeReview={styles.activeReview}
