@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './article.module.css';
 
 export default function Article(
@@ -10,5 +11,14 @@ export default function Article(
       alt={alt}
     />
     {children}
+    <Link
+      href='https://t.me/websensei_online'
+      target='_blank'
+      rel='nofollow noopener noreferrer'
+      className={styles.button}
+    >
+      <p>Записаться на первый урок</p>
+      <p>Записаться на первый урок</p>
+    </Link>
   </div>;
 }

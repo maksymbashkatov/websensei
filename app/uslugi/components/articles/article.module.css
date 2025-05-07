@@ -34,6 +34,83 @@
   color: #9B111E;
 }
 
+.article .button {
+  display: grid;
+  grid-template-rows: repeat(2, 100%);
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  /* background-color: #9B111E; */
+  background-color: #BF2233;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 6px;
+  width: 2px;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    #FFF 0px 6px,
+    transparent 6px 9px
+  );
+  background-size: 1px 9px;
+  transition: 0.5s;
+}
+
+.button:hover:before {
+  top: 0;
+  height: 100%;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  right: 6px;
+  width: 2px;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    #FFF 0px 6px,
+    transparent 6px 9px
+  );
+  background-size: 1px 9px;
+  transition: 0.5s;
+}
+
+.button:hover::after {
+  top: 0;
+  height: 100%;
+}
+
+.button p {
+  position: relative;
+  top: 0;
+  color: #FFF;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 4px 20px;
+  padding-top: 6px;
+  transition: 0.5s;
+}
+
+.button:hover p {
+  top: -100%;
+}
+
+.button:hover {
+  /* background-color: #BF2233; */
+  background-color: #9B111E;
+}
+
 @media (min-width: 541px) and (max-width: 1439px) {
   .article {
     font-size: 14px;
@@ -47,5 +124,14 @@
 
   .article h2 {
     font-size: 26px;
+  }
+
+  .article .button {
+    width: 100%;
+  }
+
+  .button p {
+    font-size: 18px;
+    text-align: center;
   }
 }
