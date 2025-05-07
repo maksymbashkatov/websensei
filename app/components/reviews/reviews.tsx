@@ -9,9 +9,9 @@ export default function Reviews() {
   const [screenWidth, setScreenWidth] = useState(NaN);
 
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
-  const [touchEndX,   setTouchEndX]   = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
+  const [dragX, setDragX] = useState(0);
   const minSwipeDistance = 50;
-
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -29,7 +29,7 @@ export default function Reviews() {
       gap = 160;
     } else if (screenWidth > 540) {
       containerWidth = 797;
-      gap = 144;
+      gap = 120;
     } else {
       containerWidth = 370;
       gap = 72;
@@ -40,10 +40,22 @@ export default function Reviews() {
 
   const onTouchStart = (e: TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
+    setDragX(0);
   };
   
   const onTouchMove = (e: TouchEvent) => {
-    setTouchEndX(e.touches[0].clientX);
+    const currentX = e.touches[0].clientX;
+    setTouchEndX(currentX);
+
+    if (touchStartX !== null) {
+      let deltaX = currentX - touchStartX;
+
+      if ((activeIndex === 1 && deltaX > 0) || (activeIndex === 4 && deltaX < 0)) {
+        deltaX = 0;
+      }
+
+      setDragX(deltaX);
+    }
   };
   
   const onTouchEnd = () => {
@@ -60,13 +72,16 @@ export default function Reviews() {
 
     setTouchStartX(null);
     setTouchEndX(null);
+    setDragX(0);
   };
   
   return <section id='reviews' className={`${styles.reviews} section`}>
     <h2 className={styles.title}>Что говорят обо мне клиенты?</h2>
     <div
-      className={styles.reviewsContainer}
-      style={{ transform: calculateTransform() }}
+      className={`${styles.reviewsContainer} ${dragX !== 0 ? styles.noTransition : ''}`}
+      style={{
+        transform: `${calculateTransform()} translateX(${dragX}px)`
+      }}
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}

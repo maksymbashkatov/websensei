@@ -21,6 +21,10 @@
   transition: transform 0.5s ease-in-out;
 }
 
+.noTransition {
+  transition: none !important;
+}
+
 .activeReview {
   opacity: 1;
   transform: scale(1);
@@ -54,7 +58,7 @@
 
 @media (min-width: 541px) and (max-width: 1439px) {
   .reviewsContainer {
-    column-gap: 144px;
+    column-gap: 120px;
   }
 
   .circlesContainer {
