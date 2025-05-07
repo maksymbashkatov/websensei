@@ -35,7 +35,7 @@ export default function Reviews() {
       gap = 72;
     }
     const offset = containerWidth + gap;
-    return `translateX(calc(${(2 - activeIndex) * offset}px))`;
+    return `translateX(calc(${(2.5 - activeIndex) * offset}px))`;
   };
 
   const onTouchStart = (e: TouchEvent) => {
@@ -50,7 +50,7 @@ export default function Reviews() {
     if (touchStartX === null || touchEndX === null) return;
     const delta = touchStartX - touchEndX;
 
-    if (delta > minSwipeDistance && activeIndex < 3) {
+    if (delta > minSwipeDistance && activeIndex < 4) {
       setActiveIndex(activeIndex + 1);
     }
 
@@ -79,7 +79,7 @@ export default function Reviews() {
     </div>
     <div className={styles.circlesContainer}>
     {
-      [1, 2, 3].map((index) => <div
+      [1, 2, 3, 4].map((index) => <div
         key={index}
         className={
           `${styles.circle} ${activeIndex === index ? styles.activeCircle : ''}`

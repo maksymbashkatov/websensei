@@ -16,7 +16,7 @@
   justify-self: center;
   display: grid;
   column-gap: 160px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
 }

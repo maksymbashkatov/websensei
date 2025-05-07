@@ -1,6 +1,6 @@
 .review {
   display: grid;
-  align-content: center;
+  align-content: start;
   row-gap: 20px;
   color: #262626;
   background-color: #F2F2F2;
